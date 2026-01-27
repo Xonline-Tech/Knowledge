@@ -1,4 +1,3 @@
-icon:: ![](../assets/bc_icon.png)
 type:: Software
 os:: Windows,MacOS,Linux
 vendors:: [[Scooter Software Inc.]]
