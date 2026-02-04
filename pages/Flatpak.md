@@ -16,3 +16,8 @@ type:: Package-Manage
 			  sudo pacman -S flatpak
 			  ```
 	- ## 初始化配置
+		- 添加 Flathub 官方仓库
+			- 添加 Flathub 官方仓库：
+				- ```
+				  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+				  ```
