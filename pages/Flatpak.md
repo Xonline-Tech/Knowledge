@@ -2,12 +2,15 @@ category:: Software
 type:: Package-Manage
 
 - ## 安装
-	- [[Debian]]/[[Ubuntu]]系列使用[[apt]]安装
+	- [[Debian]] / [[Ubuntu]] - [[apt]]
 		- ```
 		  sudo apt install flatpak
 		  ```
-	- [[RHEL]]系列
+	- [[RHEL]]系列 - [[yum]] / [[dnf]]
 		- ```
 		  sudo dnf install flatpak
 		  ```
-	-
+	- [[ArchLinux]]系列 - [[pacman]]
+		- ```
+		  sudo pacman -S flatpak
+		  ```
