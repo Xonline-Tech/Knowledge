@@ -1,4 +1,4 @@
-type:: Software
+category:: Software
 os:: Linux
 website:: https://www.remmina.org/
 

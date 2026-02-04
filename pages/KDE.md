@@ -1,1 +1,1 @@
-type:: Vendors
+category:: Vendors
