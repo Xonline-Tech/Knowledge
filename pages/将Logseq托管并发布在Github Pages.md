@@ -7,6 +7,7 @@
 			- ![image.png](../assets/image_1770271240880_0.png)
 		- **方式二：使用命令行或GIt可视化工具手动创建**
 			- > 这种方式无法获取Logseq的自动提交功能，需要手动commit
-	- 初始化Github仓库，并pushb
+	- 初始化Github仓库，并push笔记仓库
 	  logseq.order-list-type:: number
+- ## 配置Github仓库
 - > 只有公开仓库才能享受免费的Github Pages发布功能
