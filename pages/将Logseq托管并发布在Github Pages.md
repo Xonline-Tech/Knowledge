@@ -12,5 +12,6 @@
 - ## 配置Github仓库
 	- > 只有公开仓库才能享受免费的Github Pages发布功能
 	- ### Action权限配置
-		- 进入菜单 `Settings` -> `Actions`->`General`
+		- 进入菜单 `Settings` -> `Actions`->`General`->`Workflow permissions`,
+		-
 -
