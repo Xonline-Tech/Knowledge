@@ -11,3 +11,6 @@
 	  logseq.order-list-type:: number
 - ## 配置Github仓库
 	- > 只有公开仓库才能享受免费的Github Pages发布功能
+	- ### Action权限配置
+		- `settings` -》
+-
