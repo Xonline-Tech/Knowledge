@@ -65,4 +65,4 @@ category:: Notes
 		- 进入菜单 **Settings -> Actions->General->Workflow permissions**，选择**Read and write permissions**后点击**Save**保存。
 		- ![image.png](../assets/image_1770280790194_0.png)
 	- ### Github Pages配置
-		- 在配置Github Pages页面之前，你需要先提交一次
+		- 在配置Github Pages页面之前，你需要先通过**Push**或**Pull Request**一次**Action**所配置的分支，或手动运行一次。让其
