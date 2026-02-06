@@ -22,6 +22,39 @@ category:: Notes
 		- 创建配置文件 `publish.yml`
 		  logseq.order-list-type:: number
 			- ```yaml
+			  name: Publish
+			  
+			  on:
+			    push:
+			      branches: [ main ]
+			    # Allows you to run this workflow manually from the Actions tab
+			    workflow_dispatch:
+			  
+			  jobs:
+			    build:
+			      runs-on: ubuntu-latest
+			  
+			      steps:
+			        - uses: actions/checkout@v3
+			  
+			        - name: Logseq Publish
+			          uses: logseq/publish-spa@main
+			          with:
+			            output-directory: www
+			            accent-color: indigo
+			  
+			        - name: Add .nojekyll file
+			          run: touch www/.nojekyll
+			  
+			        - name: Deploy to gh-pages
+			          uses: JamesIves/github-pages-deploy-action@v4.4.1
+			          with:
+			            branch: gh-pages
+			            folder: www
+			            clean: true
+			            clean-exclude: |
+			              CNAME
+			              .nojekyll
 			  ```
 	- ### Action权限配置
 		- 进入菜单 **Settings -> Actions->General->Workflow permissions**，选择**Read and write permissions**后点击**Save**保存。
