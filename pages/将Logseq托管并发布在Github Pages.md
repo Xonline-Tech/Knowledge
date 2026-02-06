@@ -71,4 +71,5 @@ category:: Notes
 			- ![image.png](../assets/image_1770359145906_0.png)
 		- 当你配置好以后，Github会给你一个生成的域名供你访问浏览，如果想要进一步使用自己的域名进行访问可以在**Custom domain**中配置自己的域名，并前往DNS服务提供商配置
 		  logseq.order-list-type:: number
-			- > 以下是一个在
+			- > 以下是一个在[[Cloudflare]]中的配置参考
+			-
