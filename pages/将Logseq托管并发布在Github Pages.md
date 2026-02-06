@@ -66,4 +66,6 @@ category:: Notes
 		- ![image.png](../assets/image_1770280790194_0.png)
 	- ### Github Pages配置
 		- > 在配置Github Pages页面之前，你需要先通过**Push**或**Pull Request**一次**Action**所配置的分支，或手动运行一次。让其创建`gh-pages`分支
-		- logseq.order-list-type:: number
+		- 在Github
+		  logseq.order-list-type:: number
+			- ![image.png](../assets/image_1770359145906_0.png)
