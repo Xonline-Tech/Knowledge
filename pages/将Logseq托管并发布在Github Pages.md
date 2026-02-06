@@ -69,5 +69,5 @@ category:: Notes
 		- 在Github仓库的**Settings->Pages**页面按照步骤进行配置
 		  logseq.order-list-type:: number
 			- ![image.png](../assets/image_1770359145906_0.png)
-		- 当
+		- 当你配置好以后，Github会给你一个生成的域名供你访问浏览，如果想要进一步使用自己的域名进行访问可以在**Custon **
 		  logseq.order-list-type:: number
