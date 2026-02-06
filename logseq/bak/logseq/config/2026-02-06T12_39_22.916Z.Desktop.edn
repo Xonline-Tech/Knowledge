@@ -324,16 +324,17 @@
  ;; Properties to exclude from having property pages
  ;; Example usage:
  ;; :property-pages/excludelist #{:duration :author}
-:property-pages/excludelist #{:duration :author :category :os :vendors :type :website}
+:property-pages/excludelist #{:duration :author :category}
  
  ;; By default, property value separated by commas will not be treated as
  ;; page references. You can add properties to enable it.
  ;; Example usage:
  ;; :property/separated-by-commas #{:alias :tags}
-:property/separated-by-commas #{:alias :tags :type :os :vendors}
+:property/separated-by-commas #{:alias :tags :vendors}
  ;; Properties that are ignored when parsing property values for references
  ;; Example usage:
  ;; :ignored-page-references-keywords #{:author :website}
+:ignored-page-references-keywords #{:author :website :category}
  
  ;; logbook configuration.
  ;; :logbook/settings
