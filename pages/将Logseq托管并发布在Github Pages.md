@@ -1,6 +1,7 @@
 category:: Notes
 
 - ## 将笔记托管到Github
+  collapsed:: true
 	- > 该步骤需要电脑中拥有git客户端或Git管理工具
 	- **在笔记目录初始化git仓库（推荐）**
 	  logseq.order-list-type:: number
