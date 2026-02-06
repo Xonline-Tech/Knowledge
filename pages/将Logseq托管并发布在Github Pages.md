@@ -1,5 +1,6 @@
 category:: Notes
 
+-
 - ## 将笔记托管到Github
 	- > 该步骤需要电脑中拥有git客户端或Git管理工具
 	- **在笔记目录初始化git仓库（推荐）**
@@ -59,7 +60,7 @@ category:: Notes
 			- > 该配置只会检测`on.push.branchs`所配置的分支变化触发**Action**，你可以修改该配置为你所期望的分支，或者将主分支名称修改为`main`
 		- 将修改**Push**到仓库主分支，你将可以在仓库Action配置页面看到您所发布的配置。
 		  logseq.order-list-type:: number
-			-
+			- ![image.png](../assets/image_1770358691375_0.png)
 	- ### Action权限配置
 		- 进入菜单 **Settings -> Actions->General->Workflow permissions**，选择**Read and write permissions**后点击**Save**保存。
 		- ![image.png](../assets/image_1770280790194_0.png)
