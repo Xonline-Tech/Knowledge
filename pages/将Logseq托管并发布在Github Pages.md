@@ -56,6 +56,7 @@ category:: Notes
 			              CNAME
 			              .nojekyll
 			  ```
+			- > 该配置只会检测`on.push.branchs`所配置的
 	- ### Action权限配置
 		- 进入菜单 **Settings -> Actions->General->Workflow permissions**，选择**Read and write permissions**后点击**Save**保存。
 		- ![image.png](../assets/image_1770280790194_0.png)
