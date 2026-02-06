@@ -133,7 +133,7 @@
  ;; :default-home {:page "Jun 3rd, 2021"}
  ;; 3. Set "home" as the home page and display multiple pages in the right sidebar:
  ;; :default-home {:page "home", :sidebar ["Page A" "Page B"]}
- :default-home {:page "开始", :sidebar ["Contents" "journals"]}
+ :default-home {:page "开始"}
  
  ;; Set the default location for storing notes.
  ;; Default value: "pages"
@@ -300,7 +300,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites ["开始"]
+ :favorites []
 
  ;; Set flashcards interval.
  ;; Expected value:
@@ -422,6 +422,6 @@
  :file/name-format :triple-lowbar
  :publishing/all-pages-public? true
  :ui/show-brackets? false
- :feature/enable-journals? true
+ :feature/enable-journals? false
  :feature/enable-flashcards? false
  :feature/enable-whiteboards? false}
