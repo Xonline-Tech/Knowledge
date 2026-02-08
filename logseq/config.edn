@@ -324,7 +324,7 @@
  ;; Properties to exclude from having property pages
  ;; Example usage:
  ;; :property-pages/excludelist #{:duration :author}
-:property-pages/excludelist #{:duration :author :category :os :vendors :type :website}
+:property-pages/excludelist #{:duration :author :category :os :vendors :type :website :description}
  
  ;; By default, property value separated by commas will not be treated as
  ;; page references. You can add properties to enable it.

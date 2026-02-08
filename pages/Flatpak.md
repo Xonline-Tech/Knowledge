@@ -11,7 +11,7 @@ type:: Package-Manage
 			- ```
 			  sudo dnf install flatpak
 			  ```
-		- [[ArchLinux]]系列 - [[pacman]]
+		- [[ArchLinux]] / [[Manjaro]] - [[pacman]]
 			- ```
 			  sudo pacman -S flatpak
 			  ```
@@ -20,3 +20,6 @@ type:: Package-Manage
 			- ```
 			  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 			  ```
+- # 接下来
+	- [[Flatpak切换国内镜像源]]
+	- 使用 [[FlatSeal]]管理与配置Flatpak安装的软件
