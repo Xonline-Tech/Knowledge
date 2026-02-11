@@ -133,7 +133,7 @@
  ;; :default-home {:page "Jun 3rd, 2021"}
  ;; 3. Set "home" as the home page and display multiple pages in the right sidebar:
  ;; :default-home {:page "home", :sidebar ["Page A" "Page B"]}
- :default-home {:page "开始"}
+ :default-home {:page "开始", :sidebar ["Contents" "journals"]}
  
  ;; Set the default location for storing notes.
  ;; Default value: "pages"
@@ -300,7 +300,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites []
+ :favorites ["开始"]
 
  ;; Set flashcards interval.
  ;; Expected value:
@@ -324,12 +324,14 @@
  ;; Properties to exclude from having property pages
  ;; Example usage:
  ;; :property-pages/excludelist #{:duration :author}
-
+:property-pages/excludelist #{:duration :author :category :website :type :os :vendors :host-software}
+ 
  ;; By default, property value separated by commas will not be treated as
  ;; page references. You can add properties to enable it.
  ;; Example usage:
  ;; :property/separated-by-commas #{:alias :tags}
-
+:property/separated-by-commas #{:alias :tags :os :vendors :host-software}
+ 
  ;; Properties that are ignored when parsing property values for references
  ;; Example usage:
  ;; :ignored-page-references-keywords #{:author :website}
@@ -422,6 +424,8 @@
  :file/name-format :triple-lowbar
  :publishing/all-pages-public? true
  :ui/show-brackets? false
- :feature/enable-journals? false
+ :feature/enable-journals? true
  :feature/enable-flashcards? false
- :feature/enable-whiteboards? false}
+ :feature/enable-whiteboards? false
+ :graph/settings {:excluded-pages? true
+ :builtin-pages? false}}
