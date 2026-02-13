@@ -1,7 +1,7 @@
 category:: Software
 type:: Package-Manage
 
-- # 首次安装与使用
+- # 安装&初始化
 	- ## 安装
 		- [[Debian]] / [[Ubuntu]] - [[apt]]
 			- ```
