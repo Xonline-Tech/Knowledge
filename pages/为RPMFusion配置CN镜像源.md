@@ -1,5 +1,5 @@
 category:: Notes
-tags:: RPMFusion
+tags:: RPMFusion,Fedora
 
 - ### [[清华大学开源软件镜像站]]
 	- > [帮助文档](https://mirrors.tuna.tsinghua.edu.cn/help/rpmfusion/)

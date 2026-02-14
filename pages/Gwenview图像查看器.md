@@ -1,3 +1,3 @@
 category:: Software
-type:: image-viewer
+type:: 图像处理🔍
 alias:: Gwenview

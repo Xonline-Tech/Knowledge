@@ -1,4 +1,7 @@
-# 开始
+category:: Notes
+tags:: Swap,zram
+
+- # 开始
 - 因为我使用的是[[Fedora]]，默认启用了[[zram]]，所以暂时跳过安装步骤
 - # 修改配置 
   

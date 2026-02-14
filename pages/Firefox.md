@@ -1,1 +1,2 @@
 category:: Software
+type:: Browser

@@ -1,3 +1,4 @@
 category:: Software
-os:: Linux
+type:: 影音💿
+os:: Windows,MacOS,Linux
 vendors:: [[KDE]]

@@ -1,4 +1,5 @@
 category:: Notes
+tags:: Logseq,Github
 
 - ## 将笔记托管到Github
   collapsed:: true
