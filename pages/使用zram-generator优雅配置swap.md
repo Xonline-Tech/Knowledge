@@ -11,5 +11,10 @@ tags:: Swap,zram
   
   [zram0]
   # zram-size = min(ram / 2, 4096) # default
-  zram-size = ram*2
+  # 以下是几个实例 配置一个就可
+  zram-size = ram * 2
+  zram-size = ram * 0.75
+  
+  # compression-algorithm 常用 zstd（压缩率高）或 lzo（速度快）。
+  compression-algorithm = zstd
   ```
