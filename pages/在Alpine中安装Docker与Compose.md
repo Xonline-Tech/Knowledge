@@ -9,7 +9,7 @@ tags:: alpine,docker,docker-compose
 		- ```
 		  http://mirrors.ustc.edu.cn/alpine/v3.23/community
 		  ```
-	- > 也可以添加别的community
+	- > 也可以添加别的community，如需配置镜像源参考 [[为Alpine配置CN镜像源]]
 	- 然后执行
 		- ```
 		  apk update
