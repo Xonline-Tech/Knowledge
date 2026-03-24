@@ -16,4 +16,14 @@ template:: install
 - ###  [[MacOS]] - [[brew]]
   template:: brew-mac-install
 	- ```shell
+	  brew install 
+	  ```
+- ### [[Fedora]] / [[RHEL]] - [[yum]] / [[dnf]]
+  template:: yum-dnf-install
+	- ```shell
+	  # 使用 yum 安装
+	  yum install 
+	  
+	  # 使用 dnf 安装
+	  dnf install 
 	  ```
