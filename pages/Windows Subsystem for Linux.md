@@ -3,6 +3,7 @@ category:: Software
 type:: 系统⚙️
 
 - # 安装&初始化
+  id:: fee56816-f3e2-49d8-bf50-7bdf7732198b
 	- ## 安装
 		- ### 查询可用子系统
 			- ```powershell
