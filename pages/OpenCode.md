@@ -3,6 +3,7 @@ type:: 开发🔨
 website:: [官网](https://opencode.ai/) [文档](https://opencode.ai/docs/zh-cn) [Github](https://github.com/anomalyco/opencode)
 
 - # 安装&初始化
+  id:: 69dca2ca-4022-4a3d-aff4-c925e46e53db
 	- ## 安装
 		- ### 在 [[Windows]] 中安装
 			- #### 方法一、通过 [[WSL]] 使用 OpenCode (推荐)

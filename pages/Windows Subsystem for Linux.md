@@ -1,6 +1,7 @@
 alias:: WSL
 category:: Software
 type:: 系统⚙️
+id:: 69dca2e0-c889-4bad-a1da-d232ed55c16f
 
 - # 安装&初始化
   id:: fee56816-f3e2-49d8-bf50-7bdf7732198b
