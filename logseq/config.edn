@@ -429,4 +429,5 @@
  :feature/enable-flashcards? false
  :feature/enable-whiteboards? false
  :graph/settings {:excluded-pages? true
- :builtin-pages? false}}
+ :builtin-pages? false}
+ :journal/page-title-format "yyyy-MM-dd"}
