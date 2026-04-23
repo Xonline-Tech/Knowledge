@@ -1,4 +1,5 @@
 category:: Software
+type:: 系统⚙️
 alias:: Fcitx5
 
 - # 安装&初始化
