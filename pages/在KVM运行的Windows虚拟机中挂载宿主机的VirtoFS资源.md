@@ -1,4 +1,5 @@
 category:: Notes
+tags:: Windows,KVM,VirtoFS
 
 - # 🟢前置条件
 	- ((69a78093-9451-4f69-9bc6-2fbb736b8640))
