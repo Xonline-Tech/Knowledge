@@ -27,3 +27,7 @@ template:: install
 	  # 使用 dnf 安装
 	  dnf install 
 	  ```
+- ### 在 [[docker-compose]] 中运行
+  template:: run-with-compose
+	- ```yaml
+	  ```
