@@ -1,0 +1,1 @@
+alias:: dnf 5
