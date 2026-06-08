@@ -1,8 +1,11 @@
 - 本指南将帮助你使用[[Datagrip]]使用[[JDBC]]的方式连接到[[达梦]]数据库 。
 - # 配置驱动程序
 	- 选择并复制Oracle驱动配置
-		- ![](http://docmost.sunyard.team:9945/api/files/019b357a-035b-773e-8c68-30ba3c9672c8/图片.png)
+		- ![image.png](../assets/image_1780880724454_0.png)
 		- > 个人使用下来，复制Oracle的驱动可以获得最佳的适配特性。
 	- 修改复制的配置为达梦的专属配置
-		- ![](http://docmost.sunyard.team:9945/api/files/019b357d-3b80-716c-889d-25e184eee1aa/图片.png)
+		- ![image.png](../assets/image_1780880880285_0.png)
+		- ![image.png](../assets/image_1780881049365_0.png)
+		- ![image.png](../assets/image_1780881139705_0.png)
+		- ![image.png](../assets/image_1780881301923_0.png)
 		- default数据源配置：`jdbc:dm:[{user}[/{password}]]//{host::localhost}?[:{port::5236}]`
