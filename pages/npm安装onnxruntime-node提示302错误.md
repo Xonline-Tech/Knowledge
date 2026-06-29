@@ -47,7 +47,8 @@ category:: Notes
 		  cat package.json | grep version
 		  ```
 	- 手动下载对应平台的二进制（以 x64 Linux 为例）
-	- ```sudo curl -L -o onnxruntime-linux-x64-1.17.1.tgz \
+	- ```shell
+	  sudo curl -L -o onnxruntime-linux-x64-<version>.tgz \
 	  https://github.com/microsoft/onnxruntime/releases/download/v<version>/onnxruntime-linux-x64-<version>.tgz
 	  
 	  sudo tar -xzf onnxruntime-linux-x64-<version>.tgz
