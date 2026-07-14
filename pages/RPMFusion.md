@@ -14,3 +14,50 @@ website:: https://rpmfusion.org/
 		- ```shell
 		  yum localinstall --nogpgcheck https://mirrors.tuna.tsinghua.edu.cn/rpmfusion/free/el/rpmfusion-free-release-8.noarch.rpm https://mirrors.tuna.tsinghua.edu.cn/rpmfusion/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
 		  ```
+	- ### 修改链接指向镜像站
+		- 安装成功后，使用以下命令修改 `/etc/yum.repos.d/` 目录下以 `rpmfusion` 开头，以 `.repo` 结尾的文件：
+		  
+		  ```
+		  sed -e 's!^metalink=!#metalink=!g' \
+		         -e 's!^mirrorlist=!#mirrorlist=!g' \
+		         -e 's!^#baseurl=!baseurl=!g' \
+		         -e 's!https\?://download1\.rpmfusion\.org/!https://mirrors.tuna.tsinghua.edu.cn/rpmfusion/!g' \
+		         -i.bak /etc/yum.repos.d/rpmfusion*.repo
+		  ```
+		  
+		  以 Fedora 下的 `/etc/yum.repos.d/rpmfusion-free.repo` 为例，替换后的文件类似如下：
+		  
+		  ```
+		  **[rpmfusion-free]**
+		  name=RPM Fusion for Fedora $releasever - Free
+		  baseurl=https://mirrors.tuna.tsinghua.edu.cn/rpmfusion/free/fedora/releases/$releasever/Everything/$basearch/os/
+		  *#metalink=https://mirrors.rpmfusion.org/metalink?repo=free-fedora-$releasever&arch=$basearch*
+		  enabled=1
+		  metadata_expire=14d
+		  type=rpm-md
+		  gpgcheck=1
+		  repo_gpgcheck=0
+		  gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-$releasever
+		  
+		  **[rpmfusion-free-debuginfo]**
+		  name=RPM Fusion for Fedora $releasever - Free - Debug
+		  baseurl=https://mirrors.tuna.tsinghua.edu.cn/rpmfusion/free/fedora/releases/$releasever/Everything/$basearch/debug/
+		  *#metalink=https://mirrors.rpmfusion.org/metalink?repo=free-fedora-debug-$releasever&arch=$basearch*
+		  enabled=0
+		  metadata_expire=7d
+		  type=rpm-md
+		  gpgcheck=1
+		  repo_gpgcheck=0
+		  gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-$releasever
+		  
+		  **[rpmfusion-free-source]**
+		  name=RPM Fusion for Fedora $releasever - Free - Source
+		  baseurl=https://mirrors.tuna.tsinghua.edu.cn/rpmfusion/free/fedora/releases/$releasever/Everything/source/SRPMS/
+		  *#metalink=https://mirrors.rpmfusion.org/metalink?repo=free-fedora-source-$releasever&arch=$basearch*
+		  enabled=0
+		  metadata_expire=7d
+		  type=rpm-md
+		  gpgcheck=1
+		  repo_gpgcheck=0
+		  gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-$releasever
+		  ```
