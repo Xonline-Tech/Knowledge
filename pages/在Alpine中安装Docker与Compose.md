@@ -14,7 +14,7 @@ tags:: alpine,docker,docker-compose
 		- ```
 		  apk update
 		  ```
-- # 安装 [[docker]] 与 [[docker-compose]]
+- # 安装 [[Docker]] 与 [[docker-compose]]
 	- ```
 	  apk add docker docker-cli-compose
 	  ```

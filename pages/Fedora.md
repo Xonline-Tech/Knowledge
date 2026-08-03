@@ -8,3 +8,5 @@ website:: [官网](https://fedoraproject.org/)
 		- [[Fedora Sway Atomic]] - Fedora Sway Atomic 以原子化的方式提供流行的 Sway Tilling 窗口管理器。
 		- [[Fedora Budgie Atomic]] - [[Budgie]]桌面体验以原子化的方式。
 		- [[Fedora COSMIC Atomic]] - 以原子方式体验[[COSMIC]]桌面体验。
+- ## 更多基于Fedora的发行版
+	- {{query (page-property :upstream [[Fedora]])}}
