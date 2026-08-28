@@ -7,7 +7,7 @@ category:: Software
 			- 更新系统并安装依赖
 			  logseq.order-list-type:: number
 				- ```
-				  sudo apt up	date
+				  sudo apt update
 				  sudo apt install -y ca-certificates curl
 				  ```
 			- 添加 Docker 官方 GPG 密钥
@@ -37,7 +37,7 @@ category:: Software
 					  URIs: https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/debian
 					  Suites: $(. /etc/os-release && echo "$VERSION_CODENAME")
 					  Components: stable
-					  Signed-By: /etc/apt/keyrings/docker.gpg
+					  Signed-By: /etc/apt/keyrings/docker.asc
 					  EOF
 					  ```
 			- 安装 Docker 核心组件
