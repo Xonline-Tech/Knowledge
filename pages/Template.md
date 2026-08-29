@@ -1,7 +1,9 @@
-# 安装&初始化
+# 安装
 template:: install
-	- ## 安装
-		-
+	-
+- # 使用
+  template:: usage
+	-
 - # 安装&初始化
   template:: install-init
 	- ## 安装
@@ -26,6 +28,11 @@ template:: install
 	  
 	  # 使用 dnf 安装
 	  dnf install 
+	  ```
+- ### [[Debian]] / [[Ubuntu]] - [[apt]]
+  template:: apt-install
+	- ```shell
+	  apt install 
 	  ```
 - ### 在 [[docker-compose]] 中运行
   template:: run-with-compose

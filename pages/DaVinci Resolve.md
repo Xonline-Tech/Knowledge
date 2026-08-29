@@ -19,7 +19,7 @@ type:: 影音💿
 				- ```shell
 				  sudo dnf install rocm rocm-opencl rocm-clinfo
 				  ```
-				  #rocm #rocm-opencl #rocm-clinfo
+				  #ROCm #rocm-opencl #rocm-clinfo
 			- 把自己加入 GPU 权限组
 			  logseq.order-list-type:: number
 				- ```shell
