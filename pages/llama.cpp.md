@@ -67,3 +67,16 @@ website:: [Github](https://github.com/ggml-org/llama.cpp)
 				  ```
 				- > **出现错误 does not contain the HIP runtime CMake package, expected at one hip-lang-xxx**
 				  出现该问题主要是因为缺少 [[ROCm]] 开发包，需要安装 [[amdrocm-core-dev]]，然后清理缓存 `rm -rf build-hip` 后重新安装
+- # 使用
+	- ## 参数设定
+		- `-c` `--ctx-size` : 为模型上下文准备的 token 容量
+		- `-ngl` `--n-gpu-layers` : 最多将多少层模型权重放到 GPU，可以用 `99` 数字表示放置99层，而不是 `99%`，因为模型达不到99层所以默认放入所有，在新版中甚至允许`all`参数表示放置所有。
+		- `--device` : 指定llama.cpp使用哪块显卡进行推理，前提条件是通过 `HIP_VISIBLE_DEVICES` 允许 llama.cpp可以看见哪块显卡，才能通过`device`参数指定对应的显卡，如果存在多块显卡才会有后面的并行参数。
+		- `-ctk` `--cache-type-k` : 对模型运行过程中产生的 `K/V Cache` 的进行量化，主要作用是用精度损失换取显存，llama.cpp 当前允许 KV 使用 f32、f16、bf16、q8_0、q4_0、q5 等多种格式。通常情况下推荐`k`、`v`设置相同的量化参数。
+		- `-ctv` `--cache-type-v` : 同上
+		- `-b` `--batch-size` : 逻辑上，一批最多处理多少 token
+		- `-ub` `--ubatch-size` : 真正一次交给计算图/GPU处理多少 token
+		- `--flash-attn` : `on/off`，改变计算顺序，把 Attention 分块计算，并尽量让中间数据留在 GPU 高速片上存储，而不是频繁读写显存。
+		- ### MTP
+			- `-md` :
+			- `--spec-type` :

@@ -14,7 +14,11 @@ category:: Software
 			  logseq.order-list-type:: number
 				- ```shell
 				  sudo install -m 0755 -d /etc/apt/keyrings
-				  sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
+				  
+				  sudo curl -fsSL \
+				    https://download.docker.com/linux/debian/gpg \
+				    -o /etc/apt/keyrings/docker.asc
+				  
 				  sudo chmod a+r /etc/apt/keyrings/docker.asc
 				  ```
 			- 将 Docker 源添加到 APT 源列表
@@ -27,6 +31,7 @@ category:: Software
 					  URIs: https://download.docker.com/linux/debian
 					  Suites: $(. /etc/os-release && echo "$VERSION_CODENAME")
 					  Components: stable
+					  Architectures: $(dpkg --print-architecture)
 					  Signed-By: /etc/apt/keyrings/docker.asc
 					  EOF
 					  ```

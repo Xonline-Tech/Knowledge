@@ -1,4 +1,7 @@
+alias:: Node Version Manager
 category:: Software
+type:: Package-Manage
+website:: [Github](https://github.com/nvm-sh/nvm)
 description:: nvm 是一个用于管理 Node.js 版本的命令行工具，可以在同一台机器上安装和切换多个版本的 Node.js。
 
 - # 安装&初始化
@@ -9,6 +12,7 @@ description:: nvm 是一个用于管理 Node.js 版本的命令行工具，可�
 		  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 		  
 		  # 编辑配置文件 根据自己使用的shell选择配置文件
+		  # 默认会自动添加，可以先刷新环境变量尝试
 		  vi ~/.bash_profile
 		  # 在结尾添加
 		  export NVM_DIR="$HOME/.nvm"
